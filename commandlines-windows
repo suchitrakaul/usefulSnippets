@@ -1,3 +1,13 @@
 REM waits for 45 seconds before shutting down windows
 shutdown -s -t 45 
 shutdown -a (s
+REM system properties
+@echo off
+%windir%\system32\SystemPropertiesPerformance.exe
+
+
+REM The Subst command (in every version of Windows since DOS days) can take a long directory name and 
+REM make it into a drive letter
+
+subst h: c:\windows\system32\drivers\etc
+
