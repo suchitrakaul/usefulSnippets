@@ -1,0 +1,3 @@
+REM waits for 45 seconds before shutting down windows
+shutdown -s -t 45 
+shutdown -a (s
